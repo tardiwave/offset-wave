@@ -1,0 +1,48 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  line-height: inherit;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  appearance: none;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  overflow: visible;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 100%;
+  line-height: 1;
+  color: inherit;
+}
