@@ -125,8 +125,8 @@ const frag = /* glsl */ `
         vUv.y *= uHeight * 0.001;
 
         
-        vUv.x -= uWidth * 0.001; 
-        vUv.y -= uHeight * 0.001;
+        vUv.x -= 0.5 * uWidth * 0.001; 
+        vUv.y += 0.5 * uHeight * 0.001;
         
         vec3 basePerlinNoise = getPerlinTurbulence(vUv, uZoom, 1., uTime * 0.01);
 
@@ -135,5 +135,6 @@ const frag = /* glsl */ `
         vec3 noiceWithColor = applyColors(finalNoise);
     
         gl_FragColor = vec4(noiceWithColor, 1.0);
+        // gl_FragColor = vec4(vec3(vUv.x), 1.0);
     }
 `;
